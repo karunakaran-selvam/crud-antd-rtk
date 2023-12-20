@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# React RTK Query and Ant Design Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that utilizes React Toolkit (RTK) Query for API data fetching and Ant Design for UI components. The application fetches data from the Fakestore API and demonstrates CRUD (Create, Read, Update, Delete) operations.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+- **src/**
+  - **app/**
+    - **components/**
+      - `NotFound.js`: Component for 404 Not Found page
+    - **pages/**
+      - **Product/**
+        - `ProductList.js`: Component displaying a list of products
+        - `ProductForm.js`: Component for creating and updating products
+  - **redux/**
+    - **api/**
+      - `productApi.js`: API service for products
+    - `store.js`: Configure Store
+  - **routes/**
+    - `index.jss`: Routing
+  - `App.js`: Home page
+  - `index.css`: Global styles
+  - `index.js`: Entry point for the application
+  - `setupTests.js`: Configuration for Jest tests
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Clone the repository:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/karunakaran-selvam/crud-antd-rtk
 
-### `npm test`
+2. **Install dependencies:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+    cd your-react-rtk-antd-project
+    npm install
+4. **Run the development server:**
 
-### `npm run build`
+   ```bash
+    npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Display a list of products from the Fakestore API.
+  Perform CRUD operations on products.
+  Use Ant Design components for a consistent and responsive UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## API Integration
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  The application integrates with the [Fakestore API](https://fakestoreapi.com) to fetch product data.
